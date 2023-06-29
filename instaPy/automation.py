@@ -23,8 +23,8 @@ class webDriver():
             print(err,"Page Not Found")
         time.sleep(2)
     def login(self):
-        self.driver.find_element(By.NAME,"username").send_keys("alexa2savage")
-        self.driver.find_element(By.NAME,"password").send_keys("savage2alexa")
+        self.driver.find_element(By.NAME,"username").send_keys("username")
+        self.driver.find_element(By.NAME,"password").send_keys("password")
         try:
             WDW(self.driver, timeout=10).until(EC.element_to_be_clickable((By.TAG_NAME, "button")))
             self.driver.find_element(By.XPATH,"//button[@type='submit']").click()
