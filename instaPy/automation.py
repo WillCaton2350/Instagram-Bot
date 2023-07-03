@@ -13,6 +13,7 @@ class webDriver():
     
     def startDriver(self):
         self.driver = web.Safari()
+        self.driver = web.Firefox(executable_path='/usr/local/bin/geckodriver')
         self.driver.maximize_window()
     
     def openBrowser(self):
