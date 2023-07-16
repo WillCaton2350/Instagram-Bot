@@ -1,2 +1,2 @@
-# MessageBot
-Automated IG direct messenger bot
+# InstagramBot
+Automated IG direct messenger, Like and Comment bot
