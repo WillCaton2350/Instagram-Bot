@@ -1,4 +1,4 @@
-# IG BOT
+# InstagramBOT
 Dm, Follow, and Comment Bot
 
 
