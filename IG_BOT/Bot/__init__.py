@@ -36,11 +36,11 @@ class instagramBot:
         self.driver.find_element(
             By.XPATH, 
             "//*[@id='loginForm']/div/div[1]/div/label/input"
-            ).send_keys("alexa2savage@mailfence.com")
+            ).send_keys("username")
         self.driver.find_element(
             By.XPATH, 
             '//*[@id="loginForm"]/div/div[2]/div/label/input'
-            ).send_keys("5354danmmoC")
+            ).send_keys("password")
         time.sleep(3)
         self.driver.find_element(
             By.XPATH, 
