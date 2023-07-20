@@ -1,5 +1,5 @@
 # InstagramBot
-Automated IG direct messenger, Like and Comment bot
+Automated DM, Follow, and Comment bot
 
 
 
