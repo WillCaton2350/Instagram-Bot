@@ -9,7 +9,6 @@ from selenium import webdriver as web
 from urllib.error import HTTPError 
 import time
 import random
-cookie_path = '/Users/Mac/Desktop/Python Projects/Selenium/InstaBotAuto/cookies/ua.json'
 mainURL = "https://www.instagram.com/"
 class instagramBot:
     driver = None
@@ -93,7 +92,7 @@ class instagramBot:
                     pass
             break   
         time.sleep(3)
-        # find first # in dropdown
+        # find first hashtag in dropdown
         try:
             WDW(self.driver, timeout=10).until(EC.element_to_be_clickable((By.XPATH,'//div[contains(@class, "x9f619") and contains(@class, "xjbqb8w") and contains(@class, "x78zum5") and contains(@class, "x168nmei") and contains(@class, "x13lgxp2") and contains(@class, "x5pf9jr") and contains(@class, "xo71vjh") and contains(@class, "x1uhb9sk") and contains(@class, "x1plvlek") and contains(@class, "xryxfnj") and contains(@class, "x1iyjqo2") and contains(@class, "x2lwn1j") and contains(@class, "xeuugli") and contains(@class, "xdt5ytf") and contains(@class, "xqjyukv") and contains(@class, "x1cy8zhl") and contains(@class, "x1oa3qoh") and contains(@class, "x1nhvcw1")]')))
         except Exception as e:
@@ -150,5 +149,6 @@ class instagramBot:
         time.sleep(1)
         self.driver.back()
         time.sleep(2)
+        # Close Driver
     def closeDriver(self):
         self.driver.quit()
