@@ -80,11 +80,11 @@ class instaBot:
             time.sleep(3)
         self.driver.find_element(
             By.XPATH,"//*[@id='loginForm']/div/div[1]/div/label/input").send_keys(
-                "jjcollyns@gmail.com"
+                "username"
             )
         self.driver.find_element(
             By.XPATH, '//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(
-                "superman2350"
+                "password"
             )
         time.sleep(3)
         self.driver.find_element(
