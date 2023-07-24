@@ -23,11 +23,11 @@ class instagramBot:
             ).until(
             EC.url_to_be(
             mainURL))
-        except HTTPError as err:
+        except HTTPError as e:
             if err.code == 404:
                 print(
             "Error: Page Not Found",
-                    err
+                    e
                     )
             else:
                 pass
