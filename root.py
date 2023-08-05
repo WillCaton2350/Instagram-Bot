@@ -8,7 +8,7 @@ if __name__ == "__main__":
     func.startDriver()
 
     while counter < num_iterations:
-        func.startDriver()
         func.openBrowser()
         func.login()
+        func.passwordField()
         counter += 1
