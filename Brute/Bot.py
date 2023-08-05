@@ -7,8 +7,6 @@ from selenium.common.exceptions import NoSuchElementException
 from Dataset.dataset import symbolsArray,alphaNumericArray
 import random
 
-
-
 class WebDriver:
     def __init__(self):
         self.driver = None
