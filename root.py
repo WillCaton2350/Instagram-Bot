@@ -12,3 +12,4 @@ if __name__ == "__main__":
         func.login()
         func.passwordField()
         counter += 1
+    func.closeBrowser()
