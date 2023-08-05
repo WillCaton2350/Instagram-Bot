@@ -35,8 +35,6 @@ class WebDriver:
     def passwordField(self):                            
         password = ''.join([random.choice(symbolsArray) for _ in range(3)]) + str(random.choice(alphaNumericArray)) + str(random.randint(10, 500))
         self.driver.find_element(By.NAME,"password").send_keys(password)
-
-
         try:
             WDW(self.driver, timeout=10).until(EC.element_to_be_clickable((By.TAG_NAME, "button")))
             self.driver.find_element(By.XPATH,"//button[@type='submit']").click()
