@@ -30,7 +30,7 @@ class WebDriver:
         except NoSuchElementException as err:
             print(err,"Element Not Found")
         self.driver.implicitly_wait(3)
-        user = self.driver.find_element(By.NAME,"username).click()
+        user = self.driver.find_element(By.NAME,"username")
         user.send_keys("UsernameID")
     def passwordField(self):                            
         password = ''.join([random.choice(symbolsArray) for _ in range(3)]) + str(random.choice(alphaNumericArray)) + str(random.randint(10, 500))
