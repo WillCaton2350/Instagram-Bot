@@ -38,3 +38,5 @@ class WebDriver:
             self.driver.find_element(By.XPATH,"//button[@type='submit']").click()
         except HTTPError as e:
             print("Error: Selenium can't activate element",e) 
+    def closeBrowser(self):
+        self.driver.quit()
