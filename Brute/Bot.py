@@ -24,7 +24,7 @@ class WebDriver:
         self.driver.implicitly_wait(3)
     def login(self):
         try:
-            WDW(self.driver, timeout=10).until(EC.prescence_of_element((By.NAME,"username"))
+            WDW(self.driver, timeout=10).until(EC.presence_of_element_located((By.NAME,"username")))
         except NoSuchElementException as err:
             print(err,"Element Not Found")
         self.driver.implicitly_wait(3)
