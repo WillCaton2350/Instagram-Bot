@@ -1,5 +1,5 @@
 # InstagramBot
-DM, Follow, View Story, Create Post, Save Post, and Comment
+Like, DM, Follow, View Story, Create Post, Save Post, and Comment
 
 
 
