@@ -1,5 +1,6 @@
 # InstagramBot
-DM, Follow, View Story, Create Post, Save Post, and Comment
+Like, DM, Follow, View Story, Create Post, Save Post, and Comment
+Brute Force: Account_Lock_Out / Password_Cracker
 
 
 
